@@ -1,0 +1,17 @@
+{% extends "base.html" %} 
+
+{% block title %}Stepik Travel{% endblock %}
+
+{% block content %}
+
+    <!-- TOUR DETAILS TITLE -->
+
+    <h1 class="display-5 mt-4">Летим <span data-test="from">{{ departure_city }}</span></h1>
+    <p class="mb-4" >Найдено <span data-test="tourcount">{{ tour_count }}</span> туров, от <span data-test="pricemin">{{ price.min }}</span> до <span data-test="pricemax">{{ price.max }}</span> и от <span data-test="nightsmax">{{ nights.min }}</span> ночей до <span data-test="nightsmax">{{ nights.max }}</span> ночей</p>
+
+    {% include 'tours_list.html' %}
+
+{% endblock %}
+
+</body>
+</html>

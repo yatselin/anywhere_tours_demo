@@ -1,0 +1,18 @@
+{% extends "base.html" %} 
+
+{% block title %}Stepik Travel{% endblock %}
+
+{% block content %}
+
+    <!-- HERO -->
+
+    <div class="jumbotron text-center mt-4">
+      <h1 class="display-4">Всякие туры</h1>
+      <p class="lead">Для тех, кого отвлекают дома</p>
+      <p class="mt-5 w-50 mx-auto">Лучшие направления,где никто не будет вам мешать сидеть на берегу и изучать программирование, дизайн, разработку игр и управление продуктами</p>
+    </div>
+
+    {% include 'tours_list.html' %}
+
+    {% endblock %}
+

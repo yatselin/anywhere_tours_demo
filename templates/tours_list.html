@@ -1,0 +1,70 @@
+<!-- CARDS -->
+
+<div class="row mt-5" data-test="cards">
+
+    <div class="col-4" data-test="card">
+        <div class="card mb-3" >
+        <img src="{{ tour.0.picture }}" class="card-img-top img-fluid" data-test="picture">
+        <div class="card-body">
+          <h5 class="card-title">{{ tour.0.title }}</h5>
+         <p class="card-text">{{ tour.0.description|slice:":200" }}</p>
+            <a href="/tour/{{ ids.0 }}" class="btn btn-sm btn-primary" data-test="tourlink">Подробнее</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-4" data-test="card">
+        <div class="card mb-3" >
+        <img src="{{ tour.1.picture }}" class="card-img-top img-fluid" data-test="picture">
+        <div class="card-body">
+          <h5 class="card-title">{{ tour.1.title }}</h5>
+          <p class="card-text">{{ tour.1.description|slice:":200" }}</p>
+          <a href="/tour/{{ ids.1 }}" class="btn btn-sm btn-primary" data-test="tourlink">Подробнее</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-4" data-test="card">
+        <div class="card mb-3" >
+        <img src="{{ tour.2.picture }}" class="card-img-top img-fluid" data-test="picture">
+        <div class="card-body">
+         <h5 class="card-title">{{ tour.2.title }}</h5>
+         <p class="card-text">{{ tour.2.description|slice:":200" }}</p>
+         <a href="/tour/{{ ids.2 }}" class="btn btn-sm btn-primary" data-test="tourlink">Подробнее</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-4" data-test="card">
+        <div class="card mb-3" >
+        <img src="{{ tour.3.picture }}" class="card-img-top img-fluid" data-test="picture">
+        <div class="card-body">
+          <h5 class="card-title">{{ tour.3.title }}</h5>
+          <p class="card-text">{{ tour.3.description|slice:":200" }}</p>
+          <a href="/tour/{{ ids.3 }}" class="btn btn-sm btn-primary" data-test="tourlink">Подробнее</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-4" data-test="card">
+        <div class="card mb-3" >
+        <img src="{{ tour.4.picture }}" class="card-img-top img-fluid" data-test="picture">
+        <div class="card-body">
+          <h5 class="card-title">{{ tour.4.title }}</h5>
+          <p class="card-text">{{ tour.4.description|slice:":200" }}</p>
+          <a href="/tour/{{ ids.4 }}" class="btn btn-sm btn-primary" data-test="tourlink">Подробнее</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-4" data-test="card">
+        <div class="card mb-3" >
+        <img src="{{ tour.5.picture }}" class="card-img-top img-fluid" data-test="picture">
+        <div class="card-body">
+          <h5 class="card-title">{{ tour.5.title }}</h5>
+          <p class="card-text">{{ tour.5.description|slice:":200" }}</p>
+          <a href="/tour/{{ ids.5 }}" class="btn btn-sm btn-primary"  data-test="tourlink">Подробнее</a>
+        </div>
+    </div>
+    </div>
+</div>

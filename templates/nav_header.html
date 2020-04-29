@@ -1,0 +1,27 @@
+<div class="container mt-3">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" data-test="logo" href="#">Stepik Travel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" data-test="navigation">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'show_departure' 'msk' %}" data-test="navlink">Из Москвы </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'show_departure' 'spb' %}" data-test="navlink">Из Петербурга</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'show_departure' 'nsk' %}" data-test="navlink">Из Новосибирска</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'show_departure' 'ekb' %}" data-test="navlink">Из Екатеринбурга</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'show_departure' 'kazan' %}" data-test="navlink">Из Казани</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
